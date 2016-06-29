@@ -16,6 +16,7 @@ RUN rm -rf *
 RUN git clone https://github.com/keboola/kbc-style-guide-bundle.git
 WORKDIR /usr/src/app/sourcejs/specs/kbc-style-guide-bundle
 RUN npm install
+RUN npm install -g grunt
 RUN grunt less
 
 # Start the app
