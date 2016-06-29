@@ -20,6 +20,7 @@ RUN npm install -g grunt
 RUN grunt less
 
 # Start the app
+WORKDIR /usr/src/app/sourcejs
 EXPOSE 8080
 CMD [ "npm", "start" ]
 
